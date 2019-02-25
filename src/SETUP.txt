@@ -1,0 +1,16 @@
+use s18 .... ;
+
+CREATE TABLE UserDAO (
+    ID int NOT NULL AUTO_INCREMENT,
+    userName TEXT,
+    ini TEXT,
+    cpr TEXT,
+    pass TEXT,
+    PRIMARY KEY (ID)
+);
+CREATE TABLE UserRoles(
+	ID int NOT NULL AUTO_INCREMENT,
+    belongsTo INT,
+    userRole TEXT,
+    PRIMARY KEY (ID)
+);
